@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js",
     "start": "http-server",
-    "webpack": "webpack"
+    "webpack": "webpack",
+    "start:dev": "webpack-dev-server --hot --inline --content-base dist"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,7 @@
     "babel-cli": "^6.26.0",
     "babel-loader": "^8.0.6",
     "webpack": "^4.39.2",
-    "webpack-cli": "^3.3.6"
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.8.0"
   }
 }

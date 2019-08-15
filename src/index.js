@@ -23,7 +23,7 @@ let loop = GameLoop({  // create the main game loop
   },
   render: function() { // render the game state
     sprite.render();
-    console.log("rending");
+    console.log("rending2");
   }
 });
 
