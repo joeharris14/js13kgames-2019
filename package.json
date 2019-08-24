@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js",
     "start": "http-server",
-    "webpack": "webpack",
+    "webpack": "webpack --config webpack.config.js",
     "start:dev": "webpack-dev-server --hot --inline --content-base dist"
   },
   "repository": {
@@ -30,6 +30,9 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "file-loader": "^4.2.0",
+    "style-loader": "^1.0.0",
     "webpack": "^4.39.2",
     "webpack-cli": "^3.3.6",
     "webpack-dev-server": "^3.8.0"
